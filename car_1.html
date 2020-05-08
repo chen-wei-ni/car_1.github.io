@@ -1,0 +1,218 @@
+﻿<html>
+<head>
+<title>電子商務系統</title>
+	<link href="fontawesome/css/all.css" rel="stylesheet">
+	<link href="bootstrap-4.3.1/css/bootstrap.css" rel="stylesheet">
+	<link href="css/car_1.css" rel="stylesheet" media="screen and (min-width: 680px)">
+	<link href="css/phone.css" rel="stylesheet" media="screen and (max-width: 679px)">
+	<meta name="viewport" content="width=device-width,  initial-scale=1">
+</head>
+
+<body>
+	<div class="container-fluid">
+		<header class="clearfix">
+			<div class="car1">
+				<p>車麗屋<span>電子商務系統</span></p>
+			</div>
+			<div class="logout">
+				<button><a href="#">首頁</a></button>
+				<button><a href="#">登出</a></button>
+			</div>
+		</header>
+		
+		<div class="bar clearfix">
+			<div class="select">
+				<form>
+					<div class="date_select clearfix">
+						<div class="block">
+							<span>From</span>
+							<input class="far fa-calendar-alt" id="calender" type="date" name="bday" value="dd/mm/yyyy">
+						</div>
+						<div class="block">
+							<span>To</span>
+							<input class="far fa-calendar-alt" id="calender" type="date" name="bday" value="dd/mm/yyyy">
+						</div>
+					</div>
+					<div class="Selection motify"> 
+						<span>訂單來源</span>
+						<select name="source_order">
+							<option>All</option>
+							<option>O2O</option>
+							<option>MOMO</option>
+							<option>YAHOO</option>
+							<option>FRIDAY</option>
+							<option>UDN</option>
+							<option>博客來</option>
+							<option>蝦皮</option>
+							
+						</select>
+					</div>
+					<div class="Selection">
+						<span>分店</span>
+						<select name="chain_store">
+							<option>All</option>
+							<option>內湖店</option>
+							<option>宜蘭中山店</option>
+							<option>新竹店</option>
+							<option>土城店</option>
+						</select>
+					</div>
+					<div class="Selection">
+						<span>狀態</span>
+						<select name="status">
+							<option>All</option>
+							<option>未出貨</option>
+							<option>出貨中</option>
+							<option>已出貨</option>
+							<option>已退貨</option>
+						</select>
+					</div>
+					<div class="Selection">
+						<div>
+							<span>訂單查找</span>
+							<input id="searchbox" type="text" name="q" placeholder="輸入會員手機、編號、姓名、車號、工單號碼">
+							<input class="submit" type="submit" name="submit" value="搜尋">
+						</div>
+					</div>
+				</form>
+			</div>
+			<div class="report clearfix">
+				<div class="stock">
+					<div>
+						<a href="#">車麗屋電商出貨教育流程手冊</a>
+					</div>
+					<div>
+						<a href="#">報表</a>
+					</div>
+					<div>
+						<a href="#">貨運總表</a>
+					</div>
+				</div>
+				<div class="notice">黃底為今日須處理之訂單，若未處理完成將無法日結結帳！</div>
+			</div>
+		</div> 
+		<div class="table-responsive-md clearfix">
+			<table class="rwd-table">
+				<thead>
+					<tr>
+						  <th scope="col" class="text-nowrap">訂單來源</th>
+						  <th scope="col" class="text-nowrap">銷售編號</th>
+						  <th scope="col" class="text-nowrap">訂單編號</th>
+						  <th scope="col" class="text-nowrap">訂單日期</th>
+						  <th scope="col" class="text-nowrap">會員編號</th>
+						  <th scope="col" class="text-nowrap">會員姓名</th>
+						  <th scope="col" class="text-nowrap">聯絡電話</th>
+						  <th scope="col" class="text-nowrap">訂單分店</th>
+						  <th scope="col" class="text-nowrap">配合分店</th>
+						  <th scope="col" class="text-nowrap">工單號碼</th>
+						  <th scope="col" class="text-nowrap">取貨狀態</th>
+						  <th scope="col" class="text-nowrap">確認出貨</th>
+						  <th scope="col" class="text-nowrap">銷售金額</th>
+						  <th scope="col" class="text-nowrap">訂單新增日期</th>
+						  <th scope="col" class="text-nowrap">附件</th>
+						  <th scope="col" class="text-nowrap">說明</th>
+						  <th scope="col" class="text-nowrap">編輯</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td data-th="訂單來源" scope="row">O2O</td>
+						<td data-th="銷售編號">109-042928</td>
+						 <td data-th="訂單編號">109-042928</td>
+						 <td data-th="訂單日期">2020/4/29</td>
+						 <td data-th="會員編號">V5533333</td>
+						 <td data-th="會員姓名">陳薇妮</td>
+						 <td data-th="聯絡電話">0979921520</td>
+						 <td data-th="訂單分店">電商部</td>
+						 <td data-th="配合分店">新竹店</td>
+						 <td data-th="工單號碼">31090505008</td>
+						 <td data-th="取貨狀態">安裝</td>
+						 <td data-th="確認出貨">2020/05/05</td>
+						 <td data-th="銷售金額" class="text-nowrap"><i class="fas fa-dollar-sign"></i>19,252</td>
+						 <td data-th="訂單新增">2020/05/05下午03:05:11</td>
+						 <td data-th="附件"></td>
+						 <td data-th="說明"></td>
+						 <td data-th="編輯"></td>
+					</tr>
+					<tr>
+						<td data-th="訂單來源" scope="row">O2O</td>
+						<td data-th="銷售編號">109-042928</td>
+						 <td data-th="訂單編號">109-042928</td>
+						 <td data-th="訂單日期">2020/4/29</td>
+						 <td data-th="會員編號">V5533333</td>
+						 <td data-th="會員姓名">陳薇妮</td>
+						 <td data-th="聯絡電話">0979921520</td>
+						 <td data-th="訂單分店">電商部</td>
+						 <td data-th="配合分店">新竹店</td>
+						 <td data-th="工單號碼">31090505008</td>
+						 <td data-th="取貨狀態">安裝</td>
+						 <td data-th="確認出貨">2020/05/05</td>
+						 <td data-th="銷售金額" class="text-nowrap"><i class="fas fa-dollar-sign"></i>19,252</td>
+						 <td data-th="訂單新增">2020/05/05下午03:05:11</td>
+						 <td data-th="附件"></td>
+						 <td data-th="說明"></td>
+						 <td data-th="編輯"></td>
+					</tr>
+					<tr style="background-color:#fff57d;">
+						<td data-th="訂單來源" scope="row">O2O</td>
+						<td data-th="銷售編號">109-042928</td>
+						<td data-th="訂單編號">109-042928</td>
+						<td data-th="訂單日期">2020/4/29</td>
+						<td data-th="會員編號">V5533333</td>
+						<td data-th="會員姓名">陳薇妮</td>
+						<td data-th="聯絡電話">0979921520</td>
+						<td data-th="訂單分店">電商部</td>
+						<td data-th="配合分店">新竹店</td>
+						<td data-th="工單號碼">31090505008</td>
+						<td data-th="取貨狀態">安裝</td>
+						<td data-th="確認出貨">2020/05/05</td>
+						<td data-th="銷售金額" class="text-nowrap"><i class="fas fa-dollar-sign"></i>19,252</td>
+						<td data-th="訂單新增">2020/05/05下午03:05:11</td>
+						<td data-th="附件"></td>
+						<td data-th="說明"></td>
+						<td data-th="編輯"></td>
+					</tr>
+					<tr>
+						<td data-th="訂單來源" scope="row">O2O</td>
+						<td data-th="銷售編號">109-042928</td>
+						 <td data-th="訂單編號">109-042928</td>
+						 <td data-th="訂單日期">2020/4/29</td>
+						 <td data-th="會員編號">V5533333</td>
+						 <td data-th="會員姓名">陳薇妮</td>
+						 <td data-th="聯絡電話">0979921520</td>
+						 <td data-th="訂單分店">電商部</td>
+						 <td data-th="配合分店">新竹店</td>
+						 <td data-th="工單號碼">31090505008</td>
+						 <td data-th="取貨狀態">安裝</td>
+						 <td data-th="確認出貨">2020/05/05</td>
+						 <td data-th="銷售金額" class="text-nowrap"><i class="fas fa-dollar-sign"></i>19,252</td>
+						 <td data-th="訂單新增">2020/05/05下午03:05:11</td>
+						 <td data-th="附件"></td>
+						 <td data-th="說明"></td>
+						 <td data-th="編輯"></td>
+					</tr>
+					<tr>
+						<td data-th="訂單來源" scope="row">O2O</td>
+						<td data-th="銷售編號">109-042928</td>
+						 <td data-th="訂單編號">109-042928</td>
+						 <td data-th="訂單日期">2020/4/29</td>
+						 <td data-th="會員編號">V5533333</td>
+						 <td data-th="會員姓名">陳薇妮</td>
+						 <td data-th="聯絡電話">0979921520</td>
+						 <td data-th="訂單分店">電商部</td>
+						 <td data-th="配合分店">新竹店</td>
+						 <td data-th="工單號碼">31090505008</td>
+						 <td data-th="取貨狀態">安裝</td>
+						 <td data-th="確認出貨">2020/05/05</td>
+						 <td data-th="銷售金額" class="text-nowrap"><i class="fas fa-dollar-sign"></i>19,252</td>
+						 <td data-th="訂單新增">2020/05/05下午03:05:11</td>
+						 <td data-th="附件"></td>
+						 <td data-th="說明"></td>
+						 <td data-th="編輯"></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+</body>
+</html>
