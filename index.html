@@ -1,11 +1,35 @@
 ﻿<html>
 <head>
 <title>電子商務系統</title>
+	<script src="js/jquery-3.4.1.js"></script>
 	<link href="fontawesome/css/all.css" rel="stylesheet">
 	<link href="bootstrap-4.3.1/css/bootstrap.css" rel="stylesheet">
 	<link href="css/car_1.css" rel="stylesheet" media="screen and (min-width: 680px)">
 	<link href="css/phone.css" rel="stylesheet" media="screen and (max-width: 679px)">
 	<meta name="viewport" content="width=device-width,  initial-scale=1">
+	
+	<script>
+	$('document').ready(function() {
+		$('div.topA').hide();
+		$(window).scroll(function() {
+			var sh = $(window).scrollTop();
+			
+			if(sh > 500) {
+				$('div.topA').show(800);
+			}else {
+				$('div.topA').hide(800,'swing');
+			}
+		});
+		$('div.topA a').click(function() {
+			$('html,body').animate({
+				scrollTop : 0
+			},1500);
+			return false;
+		});
+		
+	});
+	
+	</script>
 </head>
 
 <body>
@@ -91,8 +115,8 @@
 				<div class="notice">黃底為今日須處理之訂單，若未處理完成將無法日結結帳！</div>
 			</div>
 		</div> 
-		<div class="table-responsive-md clearfix">
-			<table class="rwd-table">
+		<div class="col custom-table-width">
+			<table class="rwd-table table">
 				<thead>
 					<tr>
 						  <th scope="col" class="text-nowrap">訂單來源</th>
@@ -131,8 +155,8 @@
 						 <td data-th="銷售金額" class="text-nowrap"><i class="fas fa-dollar-sign"></i>19,252</td>
 						 <td data-th="訂單新增">2020/05/05下午03:05:11</td>
 						 <td data-th="附件"></td>
-						 <td data-th="說明"></td>
-						 <td data-th="編輯"></td>
+						 <td data-th="說明">未完工結單轉銷售</td>
+						 <td data-th="編輯"class="text-nowrap"><a href="#"><img src="picture/Ai.png">排除日記</a></td>
 					</tr>
 					<tr>
 						<td data-th="訂單來源" scope="row">O2O</td>
@@ -151,7 +175,7 @@
 						 <td data-th="訂單新增">2020/05/05下午03:05:11</td>
 						 <td data-th="附件"></td>
 						 <td data-th="說明"></td>
-						 <td data-th="編輯"></td>
+						 <td data-th="編輯"class="text-nowrap"><a href="#"><img src="picture/Ai.png">排除日記</a></td>
 					</tr>
 					<tr style="background-color:#fff57d;">
 						<td data-th="訂單來源" scope="row">O2O</td>
@@ -170,7 +194,7 @@
 						<td data-th="訂單新增">2020/05/05下午03:05:11</td>
 						<td data-th="附件"></td>
 						<td data-th="說明"></td>
-						<td data-th="編輯"></td>
+						<td data-th="編輯"class="text-nowrap"><a href="#"><img src="picture/Ai.png">排除日記</a></td>
 					</tr>
 					<tr>
 						<td data-th="訂單來源" scope="row">O2O</td>
@@ -189,7 +213,7 @@
 						 <td data-th="訂單新增">2020/05/05下午03:05:11</td>
 						 <td data-th="附件"></td>
 						 <td data-th="說明"></td>
-						 <td data-th="編輯"></td>
+						 <td data-th="編輯"class="text-nowrap"><a href="#"><img src="picture/Ai.png">排除日記</a></td>
 					</tr>
 					<tr>
 						<td data-th="訂單來源" scope="row">O2O</td>
@@ -208,11 +232,14 @@
 						 <td data-th="訂單新增">2020/05/05下午03:05:11</td>
 						 <td data-th="附件"></td>
 						 <td data-th="說明"></td>
-						 <td data-th="編輯"></td>
+						 <td data-th="編輯" class="text-nowrap"><a href="#"><img src="picture/Ai.png">排除日記</a></td>
 					</tr>
 				</tbody>
 			</table>
 		</div>
+	</div>
+	<div class="topA">
+		<a href="#" class="fas fa-caret-up"></a>
 	</div>
 </body>
 </html>

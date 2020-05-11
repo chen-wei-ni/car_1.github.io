@@ -20,7 +20,7 @@ header div.car1 {
 header div.car1 p{
 	font-size:1.2em;
 	font-weight:bold;
-	padding:12px 0 0 15px;
+	padding:15px 0 0 15px;
 	color:#fff;
 }
 
@@ -149,7 +149,7 @@ header  div span {
 	background-color:#fff57d;
 }
 /*table*/
-.rwd-table {
+/*.rwd-table {
 	overflow: hidden;
 	min-width:100%;
 }
@@ -172,8 +172,44 @@ header  div span {
 }
 .rwd-table th,.rwd-table td {
 	padding:0.3em!important;
+}*/
+.custom-table-width {
+	overflow-x: auto;
+	margin-right: $grid-gutter-width / 2;     
+	margin-left: $grid-gutter-width / 2;
+	padding-right: 0;
+	padding-left: 0;
+}
+.table {
+	table-layout:fixed;
+	min-width:2080px;
+}
+.rwd-table th,.rwd-table tr td {
+	vertical-align: middle;
+}
+.rwd-table tr td a img {
+	width:30px;
 }
 tbody tr:nth-of-type(2n+1){
 	background:rgba(137,247,254,0.1);
 }
+/*TOP回到上層*/
 
+div.topA {
+	display:block;
+	position:fixed;
+	width:50px;
+	height:50px;
+	background-image: linear-gradient(to right, #f9eada 0%, #e5e6f4 0%, #d6d3ea 21%,  #cfb9d3 58%, #8682a6 100%);
+	text-align:center;
+	font-size:2em;
+	bottom:80px;
+	right:0;	
+	border-radius:50px;
+}
+div.topA a{
+	display:block;
+	text-decoration:none;
+	color:#8682A6;
+	padding-top:6px;
+ }
